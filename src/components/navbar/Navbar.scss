@@ -1,0 +1,144 @@
+#nav {
+  margin-bottom: -0.1px;
+  //
+  // max-width: 1350px;
+  // margin: 0 auto;
+  //
+  padding-top: 2rem;
+  // background-color: var(--color-white);
+  background-color: var(--color-blue-background);
+
+  //
+  // max-width: 1200px;
+  position: sticky;
+  top: 0;
+  // z-index: 9999999999999999999999;
+  z-index: 100000000;
+  transition: all 0.4s ease-in;
+
+  &.sticky {
+    // background-color: var(--color-light-white);
+    background-color: transparent;
+    transition: all 0.4s ease-in;
+  }
+
+  .nav-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+    //
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-dark);
+
+    // position: sticky;
+
+    // max-width: 1200px;
+    // margin: 0 auto;
+
+    .nav-logo-img-container {
+      //   justify-self: center;
+      //   align-self: center;
+      place-self: start;
+      cursor: pointer;
+    }
+    ul {
+      display: flex;
+      gap: 1rem;
+      li {
+        text-transform: uppercase;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+    }
+    .nav-btns-container {
+      justify-self: end;
+      //
+      display: flex;
+      gap: 20px;
+      .btn {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        border-radius: 8px;
+        background: none;
+        cursor: pointer;
+      }
+      .btn.btn-signup {
+        background-color: var(--color-skyblue);
+        color: var(--color-white);
+        padding: 10px;
+        transition: all 0.4s;
+        &:hover,
+        &:active {
+          box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+          background-color: darken(#00c5ff, 10%);
+        }
+        &:active {
+          transform: translateY(2px);
+          box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+.hamburger_icon {
+  display: none;
+}
+
+// Media query
+@media only screen and (max-width: 1100px) {
+  #nav .nav-container ul li {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #nav .nav-container ul li {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #nav .nav-container ul li {
+    font-size: 10px;
+  }
+}
+
+// Mobile screens
+@media only screen and (max-width: 900px) {
+  #nav .nav-container ul li,
+  #nav .nav-container .nav-btns-container .btn-login {
+    display: none;
+  }
+
+  .hamburger_icon {
+    display: grid;
+    place-content: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Media query
+@media only screen and (max-width: 550px) {
+  #nav .nav-container {
+    padding: 0.8rem 1.2rem;
+    // max-width: 500px;
+    // margin: 0 auto;
+    .nav-logo-img-container {
+      img {
+        width: 80%;
+      }
+    }
+    .nav-btns-container {
+      .btn.btn-signup {
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+  }
+}

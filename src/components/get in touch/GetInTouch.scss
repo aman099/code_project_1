@@ -1,0 +1,393 @@
+#get_in_touch {
+  // padding-top: 170px;
+  margin-top: 120px;
+  position: relative;
+  background-color: #7460f2;
+  //
+  // max-width: 1350px;
+  // margin: 0 auto;
+  //
+
+  // Button shadow
+  .get-in-btn-shadow {
+    // margin-left: 10px;
+    position: absolute;
+    bottom: -121%;
+    left: 50.2%;
+    transform: translate(-50%, -50%);
+    width: 15rem;
+    height: 2rem;
+    border-radius: 50%;
+    filter: blur(30px);
+    background: linear-gradient(270deg, #00c5ff 0%, #00c5ff 83.14%);
+  }
+
+  .get_in_touch_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #7460f2;
+    color: var(--color-white);
+    padding: 120px 0;
+    .get_in_heading_container {
+      position: relative;
+      h2 {
+        font-size: 80px;
+        font-weight: 700;
+      }
+      svg {
+        position: absolute;
+        top: 60%;
+        left: 12.5%;
+      }
+      .text-one {
+        font-size: 14px;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        left: 4%;
+        background-color: var(--color-arrow-1);
+        color: var(--color-white);
+      }
+    }
+    .get_in_para_container {
+      p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: var(--line-height);
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+      }
+    }
+    .get_in_btn_container {
+      position: relative;
+      .btn {
+        font-size: 24px;
+        cursor: pointer;
+        background-color: var(--color-skyblue);
+        color: var(--color-white);
+        border-radius: var(--border-radius);
+        padding: 10px 40px;
+      }
+      svg {
+        position: absolute;
+        top: 75%;
+        left: 24%;
+      }
+      .text-two {
+        padding: 10px;
+        font-size: 14px;
+        position: absolute;
+        top: 132%;
+        left: 15%;
+        background: linear-gradient(
+          92.93deg,
+          #ffc4b2 0%,
+          rgba(255, 255, 255, 0.29) 100%
+        );
+      }
+      svg.arrow-three {
+        position: absolute;
+        top: 150%;
+        left: 72%;
+        z-index: 111111;
+        fill: #00c5ff;
+        rotate: 251deg;
+      }
+      .text-three {
+        padding: 10px;
+        font-size: 14px;
+        position: absolute;
+        top: 210%;
+        right: 14%;
+        background: linear-gradient(
+          92.93deg,
+          #79ddfe 0%,
+          rgba(255, 255, 255, 0.29) 100%
+        );
+      }
+    }
+  }
+
+  .bubbles {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    img {
+      width: 100px;
+    }
+  }
+  .bubbles-2 {
+    display: none;
+    position: absolute;
+    bottom: -29px;
+    right: 0;
+    rotate: 272deg;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1100px) {
+  #get_in_touch .get_in_touch_container {
+    .get_in_heading_container {
+      h2 {
+        font-size: 70px;
+      }
+      svg {
+        left: 9%;
+        top: 70%;
+        rotate: 13deg;
+      }
+      .text-one {
+        left: -2%;
+      }
+    }
+    .get_in_para_container {
+      p {
+        font-size: 22px;
+      }
+    }
+    .get_in_btn_container {
+      svg {
+        // top: 72%;
+        top: 65%;
+        // left: 26%;
+        left: 27%;
+      }
+      svg.arrow-three {
+        left: 71%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #get_in_touch .get_in_touch_container .get_in_heading_container h2 {
+    font-size: 70px;
+  }
+  #get_in_touch .get_in_touch_container {
+    gap: 24px;
+  }
+  #get_in_touch .get_in_touch_container .get_in_heading_container .text-one {
+    top: 79%;
+  }
+  #get_in_touch .get_in_touch_container .get_in_heading_container svg {
+    top: 38%;
+    left: 10%;
+  }
+
+  #get_in_touch .get_in_touch_container .get_in_btn_container svg.arrow-three {
+    // top: 115%;
+    top: 144%;
+    left: 69%;
+  }
+  #get_in_touch .get_in_touch_container .get_in_btn_container svg {
+    position: absolute;
+    top: 65%;
+    // left: 26%;
+    left: 27%;
+  }
+
+  #contact .contact-container .contact-left-side .contact-para h2 {
+    font-size: 30px;
+  }
+  #contact .contact-container .contact-left-side {
+    gap: 12px;
+  }
+  #contact .contact-container .contact-right-side #form .form-container {
+    padding: 60px 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #get_in_touch {
+    .bubbles-2 {
+      display: block;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      rotate: 360deg;
+    }
+  }
+  // get-in section
+  #get_in_touch .get_in_touch_container .get_in_heading_container {
+    .text-one {
+      top: -90%;
+    }
+    svg {
+      top: -58%;
+      left: 18.5;
+      rotate: 90deg;
+    }
+  }
+  #get_in_touch .get_in_touch_container {
+    .get_in_heading_container {
+      h2 {
+        font-size: 60px;
+      }
+      svg {
+        top: 5%;
+        left: 6%;
+        rotate: 104deg;
+      }
+      .text-one {
+        // top: -53%;
+        top: -31%;
+        left: -5%;
+        font-size: 10px;
+      }
+    }
+    .get_in_btn_container {
+      svg {
+        top: 87%;
+        left: 19%;
+        rotate: -5deg;
+      }
+      .text-two {
+        padding: 6px;
+        font-size: 12px;
+        top: 146%;
+        left: 7.5%;
+        z-index: 9;
+      }
+      svg.arrow-three {
+        top: 75%;
+        left: 82%;
+      }
+      .text-three {
+        padding: 6px;
+        font-size: 10px;
+        top: 135%;
+        right: 4.5%;
+        z-index: 9;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #get_in_touch .get_in_touch_container {
+    gap: 0px;
+    .get_in_btn_container {
+      svg {
+        width: 26px;
+      }
+      svg.arrow-three {
+        width: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #get_in_touch .get_in_touch_container .get_in_btn_container svg.arrow-three {
+    left: 80%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #get_in_touch .get_in_touch_container {
+    gap: 0;
+    .get_in_heading_container {
+      h2 {
+        font-size: 50px;
+      }
+      svg {
+        top: 0;
+        left: 8%;
+      }
+    }
+    .get_in_para_container {
+      p {
+        font-size: 16px;
+      }
+    }
+    .get_in_btn_container {
+      svg.arrow-three {
+        top: 70%;
+        left: 79%;
+        width: 24px;
+      }
+    }
+  }
+
+  #get_in_touch .get_in_touch_container .get_in_btn_container svg {
+    top: 87%;
+    left: 21%;
+    width: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #get_in_touch .get_in_touch_container {
+    .get_in_heading_container {
+      svg {
+        top: -86%;
+        left: 12%;
+        width: 24px;
+      }
+      .text-one {
+        top: -135%;
+        left: -5%;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
+    .get_in_btn_container {
+      .btn {
+        font-size: 14px;
+        padding: 10px 24px;
+      }
+      svg {
+        top: 71%;
+        left: 27%;
+        width: 21px;
+      }
+      svg.arrow-three {
+        top: 65%;
+        left: 73%;
+        width: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #get_in_touch .get_in_touch_container {
+    .get_in_btn_container {
+      .text-two {
+        padding: 3px;
+        font-size: 10px;
+        top: 196%;
+        left: 6.5%;
+      }
+      svg {
+        top: 118%;
+        left: 24%;
+        width: 18px;
+      }
+      .text-three {
+        padding: 3px;
+        font-size: 9px;
+        top: 214%;
+        right: 6.5%;
+      }
+      svg.arrow-three {
+        top: 131%;
+        left: 71%;
+      }
+    }
+    .get_in_heading_container {
+      svg {
+        top: -94%;
+        left: 16%;
+        width: 18px;
+      }
+    }
+  }
+}

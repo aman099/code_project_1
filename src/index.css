@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,41 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+:root {
+  /* colors */
+  --color-blue-background: #0f0f42;
+  --color-purple-background: #7460f2;
+
+  --color-white: #ffffff;
+  --color-light-white: #f6f6f6;
+  --color-skyblue: #00c5ff;
+
+  --color-arrow-1: #8b94f0;
+  --color-arrow-2: #ffc4b2;
+  --color-arrow-3: ##00c5ff;
+  --color-arrow-4: #f5e86b;
+
+  --color-linear-gradient-1: linear-gradient(
+    358.9deg,
+    #8b94f0 0.82%,
+    #8b94f0 98.99%
+  );
+  --color-linear-gradient-2: linear-gradient(360deg, #f6e868 0%, #f0e78c 100%);
+  --color-linear-gradient-3: linear-gradient(
+    358.11deg,
+    #ffc4b2 5.08%,
+    #ffc4b2 98.41%
+  );
+  --color-linear-gradient-4: linear-gradient(
+    2.15deg,
+    #4cd6ff 1.94%,
+    #79ddfe 98.51%
+  );
+  /* border-radius */
+  --border-radius: 8px;
+  /* line-height */
+  --line-height: 1.5;
+  /* shadows */
+  --shadow-dark: 0 0.8rem 1rem rgba(0, 0, 0, 0.4);
 }
